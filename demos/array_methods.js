@@ -21,7 +21,7 @@ let products = [
 //   return product.item;
 // });
 
-let productNames = products.map((product) => product.item);
+let productsNames = products.map((product) => product.item);
 
 // productNames.forEach(function print(productName) {
 //   console.log(productName);
@@ -30,7 +30,7 @@ let productNames = products.map((product) => product.item);
 productNames.forEach((productName) => console.log(productName));
 "use strict";
 
-let products = [
+let product = [
   { item: "Bread", price: 3.29, quantity: 2 },
   { item: "Milk", price: 4.09, quantity: 1 },
   { item: "T-Bone Steak", price: 12.99, quantity: 2 },
