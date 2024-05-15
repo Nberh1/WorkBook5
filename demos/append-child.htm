@@ -4,19 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Append Child</title>
-    
-  </head>
-  <body>
-    <main>
-      <div id="imagesContainer">
-        <!-- <img src="https://placehold.co/200" alt="placeholder image"> -->
-      </div>
-    </main<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Append Child</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
@@ -29,6 +16,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
     />
+    <style>
+        main{
+            padding: 5rem;
+        }
+
+        .image{
+            padding: 2rem;
+
+        }
+    </style>
   </head>
   <body>
     <main>
@@ -50,35 +47,14 @@
         function addImage() {
           //create the child
           let image = document.createElement("img");
-          image.src = "https://placehold.co/200";
+          image.src = "https://placehold.co/300x200";
           image.alt = "placeholder image";
+          image.classList.add("image")
           //append the child into the parent(put into inside)
           imagesContainer.appendChild(image);
         }
-
         //connect your functions to the html elements
         addImageButton.onclick = addImage;
-      };
-    </script>
-  </body>
-</html>
-    <script>
-      "use strict";
-
-      //when this runs you are guarenteed that all html elements have been loaded
-      window.onload = function init() {
-        //get all your html elements
-        //get the parent
-        let imagesContainer = document.querySelector("#imagesContainer");
-        //create the child
-        let image = document.createElement("img");
-        image.src = "https://placehold.co/200";
-        image.alt = "placeholder image";
-
-        //append the child into the parent(put into inside)
-        imagesContainer.appendChild(image);
-        //define your functions
-        //connect your functions to the html elements
       };
     </script>
   </body>
