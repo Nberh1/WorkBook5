@@ -5,7 +5,7 @@
 let imageFiles = [
   {
     id: "1",
-    path: "WB5-exercisessomething.png",
+    path: "something.",
     description: "placeholder 1",
   },
   {
@@ -56,15 +56,14 @@ let imageFiles = [
 ];
 
 window.onload = function () {
-  let imageComntainer = document.querySelector("#imageContainer");
-  let addImageButton = document.querrySelector("#addImageButton");
+  let addImageButton = document.querySelector("#addImageButton");
   let clearImageButton = document.querySelector("#clearImageButton");
   let imageList = document.querySelector("#imageList");
   let imgDisplay = document.querySelector("#imgDisplay");
 
   function setImage() {
     for (const imageFile of imageFiles) {
-      let imageOption = document.createElement("imageOption");
+      let imageOption = document.createElement("Option");
       imageOption.value = imageFile.id;
       imageOption.innerText = imageFile.description;
       imageList.appendChild(imageOption);
